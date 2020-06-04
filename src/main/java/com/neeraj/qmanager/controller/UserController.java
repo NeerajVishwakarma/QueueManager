@@ -22,7 +22,7 @@ public class UserController {
 		this.userService = userService;
 	}
 	
-	@RequestMapping({"","/","/userindex"})
+	@RequestMapping({"/userindex"})
 	public String userPageHandle(Model model) {
 		return "userlogin";
 	}
