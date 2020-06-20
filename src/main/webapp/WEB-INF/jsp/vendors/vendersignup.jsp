@@ -1,5 +1,7 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
@@ -8,7 +10,7 @@
 	<table>
 		<tbody>
 			<tr>
-				<td>User Name</td>
+				<td>Vendor Name</td>
 				<td><input type="text" name="username"></td>
 			</tr>
 			<tr>
