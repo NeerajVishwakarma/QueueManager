@@ -5,10 +5,18 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>User SignIn Page</title>
 </head>
 <body>
-	<form:form method="POST" action="/SpringMVCTest/addEmployee">
+
+	<%-- <div class="form-group">
+			<label class="control-label col-md-3">User Name</label>
+			<div class="col-md-7">
+				<input type="text" class="form-control" name="username"
+					value="${user.username}" />
+			</div>
+		</div> --%>
+	<form class="form-horizontal" method="POST" action="login-user">
 		<table>
 			<tbody>
 				<tr>
@@ -20,13 +28,14 @@
 					<td><input type="password" name="password" /></td>
 				</tr>
 				<tr>
-					<td><input type="button" name="login" onclick="signin"
-						value="SignIn" /></td>
+					<td><div class="form-group ">
+							<input type="submit" class="btn btn-primary" value="Login" />
+						</div></td>
 				</tr>
 			</tbody>
 		</table>
-	</form:form>
+	</form>
 	<br>
-	<a href="/usersignup">Get user details</a>
+	<a href="/saveuser">Signup</a>
 </body>
 </html>
